@@ -63,18 +63,18 @@ namespace Tiled2Unity
             bool isTrigger = ImportUtils.GetAttributeAsBoolean(xmlPrefab, "isTrigger", false);
             AddGameObjectsTo(tempPrefab, xmlPrefab, isTrigger, objPath, importComponent, customImporters);
 
-            // Part 3: Allow for customization from other editor scripts to be made on the prefab
-            // (These are generally for game-specific needs)
-            CustomizePrefab(tempPrefab, customImporters);
-
-            // Part 3.5: Apply the scale only after all children have been added
-            tempPrefab.transform.localScale = new Vector3(prefabScale, prefabScale, prefabScale);
-
             // Part 4: Save the prefab, keeping references intact.
             string resourcePath = ImportUtils.GetAttributeAsString(xmlPrefab, "resourcePath", "");
             bool isResource = !String.IsNullOrEmpty(resourcePath) || ImportUtils.GetAttributeAsBoolean(xmlPrefab, "resource", false);
             string prefabPath = GetPrefabAssetPath(prefabName, isResource, resourcePath);
             string prefabFile = System.IO.Path.GetFileName(prefabPath);
+
+            // Part 3: Allow for customization from other editor scripts to be made on the prefab
+            // (These are generally for game-specific needs)
+            CustomizePrefab(tempPrefab, customImporters, prefabPath);
+
+            // Part 3.5: Apply the scale only after all children have been added
+            tempPrefab.transform.localScale = new Vector3(prefabScale, prefabScale, prefabScale);
 
             // Keep track of the prefab file being imported
             if (!importComponent.ImportWait_Prefabs.Contains(prefabFile))
@@ -570,11 +570,11 @@ namespace Tiled2Unity
             }
         }
 
-        private void CustomizePrefab(GameObject prefab, IList<ICustomTiledImporter> importers)
+        private void CustomizePrefab(GameObject prefab, IList<ICustomTiledImporter> importers, string path)
         {
             foreach (ICustomTiledImporter importer in importers)
             {
-                importer.CustomizePrefab(prefab);
+                importer.CustomizePrefab(prefab, path);
             }
         }
 

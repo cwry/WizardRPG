@@ -15,7 +15,7 @@ namespace Tiled2Unity
 
         // Called just before the prefab is saved to the asset database
         // A last chance opporunity to modify it through script
-        void CustomizePrefab(GameObject prefab);
+        void CustomizePrefab(GameObject prefab, string path);
     }
 }
 

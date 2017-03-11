@@ -4,7 +4,7 @@ using Tiled2Unity;
 using UnityEngine;
 
 [CustomTiledImporter]
-public class TileImporter : ICustomTiledImporter {
+public class TileTypeImporter : ICustomTiledImporter {
 
     Dictionary<int, Dictionary<int, TileType>> tileTypeData = new Dictionary<int, Dictionary<int, TileType>>();
 
@@ -13,18 +13,18 @@ public class TileImporter : ICustomTiledImporter {
             int x = (int)Math.Round(gameObject.transform.position.x); 
             int y = (int)Math.Round(gameObject.transform.position.y);
             TileType t = (TileType)Enum.Parse(typeof(TileType), customProperties["tile_type"].ToUpper());
-            addNewTileType(x, y, t);
+            AddNewTileType(x, y, t);
         }
     }
 
-    void addNewTileType(int x, int y, TileType type) {
+    void AddNewTileType(int x, int y, TileType type) {
         if (!tileTypeData.ContainsKey(x)) {
             tileTypeData.Add(x, new Dictionary<int, TileType>());
         }
         tileTypeData[x].Add(y, type);
     }
 
-    TileType[] getTileTypeDictAsArray(int w, int h) {
+    TileType[] GetTileTypeDictAsArray(int w, int h) {
         var arr = new TileType[w * h];
         foreach(var kv1 in tileTypeData) {
             int x = kv1.Key;
@@ -36,7 +36,7 @@ public class TileImporter : ICustomTiledImporter {
         return arr;
     }
 
-    public void CustomizePrefab(GameObject prefab) {
+    public void CustomizePrefab(GameObject prefab, string path) {
         Transform tileTypeObjectLayer = prefab.transform.Find("tiletype_object");
         Transform tileTypeLayer = prefab.transform.Find("tiletype");
         if (tileTypeObjectLayer != null) MonoBehaviour.DestroyImmediate(tileTypeObjectLayer.gameObject);
@@ -44,7 +44,6 @@ public class TileImporter : ICustomTiledImporter {
 
         var map = prefab.GetComponent<TiledMap>();
         var tileTypeInfo = prefab.AddComponent<TileTypeInfo>();
-        tileTypeInfo.tileInfoFlattened = getTileTypeDictAsArray(map.NumTilesWide, map.NumTilesHigh);
-        tileTypeInfo.tileInfoPersistentDataStride = map.NumTilesWide;
+        tileTypeInfo.SetTileInfo(GetTileTypeDictAsArray(map.NumTilesWide, map.NumTilesHigh), map.NumTilesWide);
     }
 }
