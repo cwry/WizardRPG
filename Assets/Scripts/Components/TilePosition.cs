@@ -166,6 +166,7 @@ public class TilePosition : MonoBehaviour {
     }
 
     void FirePositionChanged() {
+        Debug.Log(Position.x + " | " + Position.y);
         UpdateSpriteRendererOrder();
         if (PositionChanged != null) PositionChanged();
         if (Changed != null) Changed();
