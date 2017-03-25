@@ -1,1 +1,4 @@
+./Rules/fritzrule.tmx
+
+//must be last
 ./Rules/tiletype_rules.tmx
