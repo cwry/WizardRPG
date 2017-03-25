@@ -24,8 +24,10 @@ public class StaticObjectEditor : Editor {
             EditorGUILayout.LabelField("Size");
             int newW = EditorGUILayout.IntField(tar.Footprint.Width);
             if (newW <= 0) newW = 1;
+            if (newW % 2 == 0) newW++;
             int newH = EditorGUILayout.IntField(tar.Footprint.Height);
             if (newH <= 0) newH = 1;
+            if (newH % 2 == 0) newH++;
             EditorGUILayout.EndHorizontal();
             if (EditorGUI.EndChangeCheck()) {
                 tar.Footprint = resizeFootprint(newW, newH);

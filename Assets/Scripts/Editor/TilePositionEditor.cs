@@ -31,7 +31,7 @@ public class TilePositionEditor : Editor {
         }
 
         EditorGUI.BeginChangeCheck();
-        int fightDrawPriority = EditorGUILayout.IntSlider("Fight Draw Priority", tilePosition.FightDrawPriority, 0, 9);
+        int fightDrawPriority = EditorGUILayout.IntSlider("Fight Draw Priority", tilePosition.FightDrawPriority, -10, 10);
         if (EditorGUI.EndChangeCheck()) {
             Undo.RecordObject(target, "Change Draw Priority");
             tilePosition.FightDrawPriority = fightDrawPriority;

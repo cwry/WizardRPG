@@ -117,19 +117,22 @@ public class TilePosition : MonoBehaviour {
 
     void Update() {
 #if UNITY_EDITOR
-        UpdateSpriteRendererOrder();
         while (UnityEditorInternal.ComponentUtility.MoveComponentUp(this)) { }
         if (!EditorApplication.isPlayingOrWillChangePlaymode) {
-            if(Selection.activeGameObject != null && IsTopLevelTilePositionInHierarchy(Selection.activeGameObject)) {
-                var pos = Position;
-                if (MapInfo.Current != null) {
-                    pos.x = Mathf.Max(Mathf.Min(pos.x, MapInfo.Current.Width - 1), 0);
-                    pos.y = Mathf.Max(Mathf.Min(pos.y, MapInfo.Current.Height - 1), 0);
+            foreach (var go in Selection.gameObjects) {
+                if (IsTopLevelTilePositionInHierarchy(go)) {
+                    var pos = Position;
+                    if (MapInfo.Current != null) {
+                        pos.x = Mathf.Max(Mathf.Min(pos.x, MapInfo.Current.Width - 1), 0);
+                        pos.y = Mathf.Max(Mathf.Min(pos.y, MapInfo.Current.Height - 1), 0);
+                    }
+                    Position = pos;
+                    transform.localScale = Vector3.one;
+                    transform.rotation = Quaternion.identity;
+                    break;
                 }
-                Position = pos;
-                transform.localScale = Vector3.one;
-                transform.rotation = Quaternion.identity;
             }
+            UpdateSpriteRendererOrder();
         }
 #endif
 
@@ -148,7 +151,7 @@ public class TilePosition : MonoBehaviour {
         if(spriteRenderer != null) {
             spriteRenderer.sortingLayerName = DrawLayerToSortingLayerName(Layer);
             if(Layer == DrawLayer.DEFAULT) {
-                spriteRenderer.sortingOrder = int.MaxValue - Position.y * 10 + FightDrawPriority;
+                spriteRenderer.sortingOrder = int.MaxValue - Position.y * 100 + FightDrawPriority;
             }else {
                 spriteRenderer.sortingOrder = FightDrawPriority;
             }
