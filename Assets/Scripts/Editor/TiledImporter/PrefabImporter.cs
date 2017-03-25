@@ -4,7 +4,7 @@ using Tiled2Unity;
 using UnityEngine;
 
 [CustomTiledImporter]
-public class TileTypeImporter : ICustomTiledImporter {
+public class PrefabImporter : ICustomTiledImporter {
 
     Dictionary<int, Dictionary<int, TileType>> tileTypeData = new Dictionary<int, Dictionary<int, TileType>>();
 
@@ -12,8 +12,12 @@ public class TileTypeImporter : ICustomTiledImporter {
         if (customProperties.ContainsKey("tile_type")) {
             int x = (int)Math.Round(gameObject.transform.position.x); 
             int y = (int)Math.Round(gameObject.transform.position.y);
-            TileType t = (TileType)Enum.Parse(typeof(TileType), customProperties["tile_type"].ToUpper());
-            AddNewTileType(x, y, t);
+            try {
+                TileType t = (TileType)Enum.Parse(typeof(TileType), customProperties["tile_type"].ToUpper());
+                if (t != TileType.NONE_EXPLICIT) AddNewTileType(x, y, t);
+            } catch(Exception e) {
+                Debug.LogError("Couldn't parse TileType Enum " + customProperties["tile_type"].ToUpper() + "\n" + e.ToString());
+            }
         }
     }
 
@@ -29,7 +33,7 @@ public class TileTypeImporter : ICustomTiledImporter {
         foreach(var kv1 in tileTypeData) {
             int x = kv1.Key;
             foreach(var kv2 in kv1.Value) {
-                int y = h - 1 + kv2.Key;
+                int y = h + kv2.Key;
                 arr[x + y * w] = kv2.Value;
             }
         }
@@ -43,7 +47,11 @@ public class TileTypeImporter : ICustomTiledImporter {
         if (tileTypeLayer != null) MonoBehaviour.DestroyImmediate(tileTypeLayer.gameObject);
 
         var map = prefab.GetComponent<TiledMap>();
-        var tileTypeInfo = prefab.AddComponent<TileTypeInfo>();
-        tileTypeInfo.SetTileInfo(GetTileTypeDictAsArray(map.NumTilesWide, map.NumTilesHigh), map.NumTilesWide);
+        prefab.AddComponent<MapInfo>().MapTileTypes = new Flattened2DArray<TileType>(GetTileTypeDictAsArray(map.NumTilesWide, map.NumTilesHigh), map.NumTilesWide);
+        prefab.AddComponent<TiledMapHider>();
+
+        float scale = map.NumTilesWide / (map.ExportScale * map.MapWidthInPixels);
+        prefab.transform.localScale = new Vector3(scale, scale, scale);
+        prefab.transform.position = new Vector3(-0.5f, scale * map.ExportScale * map.MapHeightInPixels - 0.5f, 0);
     }
 }

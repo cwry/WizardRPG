@@ -72,7 +72,7 @@ public class Flattened2DArray<T> : IEnumerable<T> {
     }
 
     public IEnumerator<T> GetEnumerator() {
-        return (IEnumerator<T>)source.GetEnumerator();
+        return ((IEnumerable<T>)source).GetEnumerator();
     }
 
     IEnumerator IEnumerable.GetEnumerator() {
