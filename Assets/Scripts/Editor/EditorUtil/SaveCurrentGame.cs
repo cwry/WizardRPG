@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-public partial class EditorUtil {
+public partial class EditorUtilWindowUtil {
 
     public static void DrawSaveButton() {
         if(GUILayout.Button("Save Game")) {

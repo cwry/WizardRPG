@@ -5,16 +5,24 @@ using UnityEngine;
 using UnityEditor;
 
 public class EditorUtilEditorWindow : EditorWindow{
-    public void Awake() {
-        SceneView.onSceneGUIDelegate += EditorUtil.DrawTileTypes;
+    bool RenderTileTypesFoldout;
+
+    public void OnFocus() {
+        SceneView.onSceneGUIDelegate -= OnHandles;
+        SceneView.onSceneGUIDelegate += OnHandles;
     }
     [MenuItem("Window/EditorUtil")]
     public static void ShowWindow() {
         EditorWindow.GetWindow(typeof(EditorUtilEditorWindow));
     }
-    private void OnGUI() {
-        EditorUtil.RenderTileTypes();
-        EditorUtil.DrawSaveButton();
-        SceneView.RepaintAll();
+
+    void OnGUI() {
+        if(RenderTileTypesFoldout = EditorGUILayout.Foldout(RenderTileTypesFoldout, "Render Map Info")) EditorUtilWindowUtil.RenderMapInfoEditor();
+        EditorUtilWindowUtil.DrawSaveButton();
+    }
+
+    void OnHandles(SceneView sceneView) {
+        EditorUtilWindowUtil.RenderMapInfoHandles();
+        sceneView.Repaint();
     }
 }

@@ -1,26 +1,39 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-#if UNITY_EDITOR
 using UnityEditor;
-#endif
 
-public class RenderTileTypes : MonoBehaviour {
-    public bool RenderTileOutlines;
-    public bool RenderMapTileTypes;
-    public bool RenderStaticObjectTileTypes;
+public partial class EditorUtilWindowUtil {
+    public static bool RenderTileOutlines = true;
+    public static bool RenderMapTileTypes = true;
+    public static bool RenderStaticObjectTileTypes = true;
 
-#if UNITY_EDITOR
-    void OnDrawGizmos() {
+    public static void RenderMapInfoEditor() {
+        EditorGUILayout.BeginHorizontal();
+        EditorGUILayout.LabelField("Render Tile Outlines");
+        RenderTileOutlines = EditorGUILayout.Toggle(RenderTileOutlines);
+        EditorGUILayout.EndHorizontal();
+
+        EditorGUILayout.BeginHorizontal();
+        EditorGUILayout.LabelField("Render Map Tile Types");
+        RenderMapTileTypes = EditorGUILayout.Toggle(RenderMapTileTypes);
+        EditorGUILayout.EndHorizontal();
+
+        EditorGUILayout.BeginHorizontal();
+        EditorGUILayout.LabelField("Render Static Object Tile Types");
+        RenderStaticObjectTileTypes = EditorGUILayout.Toggle(RenderStaticObjectTileTypes);
+        EditorGUILayout.EndHorizontal();
+    }
+
+    public static void RenderMapInfoHandles() { 
         if (MapInfo.Current == null || MapInfo.Current.TileTypes == null) return;
 
         Flattened2DArray<TileType> arr = null;
         if (RenderMapTileTypes && RenderStaticObjectTileTypes) {
             arr = MapInfo.Current.TileTypes;
-        }else if (RenderMapTileTypes) {
+        } else if (RenderMapTileTypes) {
             arr = MapInfo.Current.MapTileTypes;
-        }else if (RenderStaticObjectTileTypes) {
+        } else if (RenderStaticObjectTileTypes) {
             arr = MapInfo.Current.StaticObjectTileTypes;
         }
 
@@ -38,14 +51,13 @@ public class RenderTileTypes : MonoBehaviour {
 
         if (RenderTileOutlines) {
             Handles.color = Color.black;
-            for(int i = 0; i <= MapInfo.Current.Height; i++) {
+            for (int i = 0; i <= MapInfo.Current.Height; i++) {
                 Handles.DrawLine(new Vector3(i - 0.5f, -0.5f), new Vector3(i - 0.5f, MapInfo.Current.Height - 0.5f));
             }
 
-            for(int i = 0; i <= MapInfo.Current.Width; i++) {
+            for (int i = 0; i <= MapInfo.Current.Width; i++) {
                 Handles.DrawLine(new Vector3(-0.5f, i - 0.5f), new Vector3(MapInfo.Current.Width - 0.5f, i - 0.5f));
             }
         }
     }
 }
-#endif
