@@ -63,6 +63,19 @@ public class MapInfo : MonoBehaviour {
         }
     }
 
+    Flattened2DArray<List<Actor>> _actors;
+    public Flattened2DArray<List<Actor>> Actors {
+        get {
+            if(_actors == null) {
+                _actors = new Flattened2DArray<List<Actor>>(Width, Height);
+                for(int i = 0; i < _actors.Length; i++) {
+                    _actors[i] = new List<Actor>();
+                }
+            }
+            return _actors;
+        }
+    }
+
     [SerializeField]
     int _width;
     public int Width {

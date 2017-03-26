@@ -63,12 +63,12 @@ public class TilePosition : MonoBehaviour {
 
 
     Vec2i? _lastPosition = null;
-    Vec2i lastPosition {
+    public Vec2i LastPosition {
         get {
             if (_lastPosition == null) _lastPosition = Position;
             return (Vec2i) _lastPosition;
         }
-        set {
+        private set {
             _lastPosition = value;
         }
     }
@@ -82,9 +82,9 @@ public class TilePosition : MonoBehaviour {
         get { return new Vector2(transform.position.x - Offset.x, transform.position.y - Offset.y); }
         set {
             transform.position = new Vector3(value.x + Offset.x, value.y + Offset.y);
-            if (Position != lastPosition) {
-                lastPosition = Position;
+            if (Position != LastPosition) {
                 FirePositionChanged();
+                LastPosition = Position;
             }
         }
     }
@@ -138,9 +138,9 @@ public class TilePosition : MonoBehaviour {
 
         if (transform.hasChanged) {
             transform.hasChanged = false;
-            if(Position != lastPosition) {
-                lastPosition = Position;
+            if(Position != LastPosition) {
                 FirePositionChanged();
+                LastPosition = Position;
             }
         }
     }

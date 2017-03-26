@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="32" height="32" tilewidth="16" tileheight="16" nextobjectid="2967">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="32" height="32" tilewidth="16" tileheight="16" nextobjectid="3136">
  <tileset firstgid="1" source="../Tilesets/LOGIC.tsx"/>
  <tileset firstgid="4097" source="../Tilesets/test.tsx"/>
  <layer name="background3" width="32" height="32">
@@ -119,1843 +119,887 @@
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer name="foreground" width="32" height="32">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
- </layer>
  <layer name="tiletype" width="32" height="32">
   <properties>
    <property name="test" value="test"/>
   </properties>
   <data encoding="csv">
-0,0,0,0,65,0,0,0,0,0,0,65,65,65,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,65,0,0,0,0,0,0,0,0,65,65,65,65,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,65,0,0,0,0,0,65,65,65,65,0,0,0,65,65,65,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,65,0,0,65,0,0,65,0,0,65,65,0,0,0,0,0,65,65,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,65,65,0,0,0,0,65,65,65,65,65,0,0,0,0,0,0,0,65,65,65,0,0,0,0,0,0,0,0,
-0,0,0,65,0,0,0,0,0,0,0,0,65,65,65,0,65,65,65,65,65,65,0,65,65,0,0,0,0,0,0,0,
-0,0,0,65,0,0,0,0,0,0,0,0,65,65,65,65,0,0,0,0,0,65,65,0,0,65,65,0,0,0,0,0,
-0,0,65,65,0,0,0,0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,0,65,0,0,65,65,0,0,0,0,
-0,65,0,65,0,0,0,0,0,0,0,0,65,65,65,0,0,0,65,0,0,0,0,65,65,0,0,65,65,0,0,0,
-0,65,65,0,65,0,0,0,0,0,0,65,65,65,65,65,65,65,65,65,0,0,0,0,65,0,0,0,0,65,0,0,
-0,65,0,0,65,0,0,0,65,65,65,0,0,0,0,0,0,0,0,65,65,65,65,65,65,0,0,0,0,65,65,0,
-0,0,0,65,65,0,0,65,65,0,0,0,65,65,65,65,65,65,0,0,0,0,0,65,65,65,0,0,0,0,65,0,
-0,0,0,0,65,0,65,0,0,0,0,65,65,0,0,0,0,0,65,65,0,0,65,65,65,65,65,65,0,0,0,65,
-0,0,0,0,65,65,65,0,0,0,65,0,0,0,0,0,0,0,0,65,65,0,65,0,0,65,0,0,65,0,0,65,
-0,0,0,0,65,65,65,0,0,65,0,0,0,0,0,0,0,0,0,0,65,65,65,0,0,65,65,0,0,65,65,0,
-0,0,0,0,65,65,0,65,65,65,0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,0,65,0,0,0,65,65,
-0,0,0,0,65,65,65,65,65,65,0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,0,65,0,0,0,0,65,
-0,0,0,0,65,0,65,65,0,0,65,65,0,0,0,0,0,0,0,0,65,0,0,0,0,0,0,65,0,0,0,0,
-0,0,0,0,65,0,65,65,0,0,0,0,65,65,65,0,0,0,0,65,65,65,65,0,65,65,65,65,0,0,0,0,
-0,0,0,0,65,0,65,65,65,0,0,0,0,0,65,65,65,65,65,65,65,65,65,0,65,65,0,65,65,65,0,0,
-0,0,0,0,65,0,65,0,65,65,0,0,0,0,0,0,0,0,0,65,65,65,0,0,65,65,65,65,0,65,0,0,
-0,0,0,0,65,0,65,0,0,65,65,0,0,0,0,0,0,65,65,0,0,0,0,65,0,65,65,65,0,65,0,0,
-0,0,0,0,65,0,65,0,0,0,65,65,0,0,0,65,65,65,65,0,0,0,0,65,65,65,65,65,0,65,0,65,
-0,0,0,0,65,0,65,0,0,0,0,65,65,65,65,65,0,65,0,0,0,65,65,65,65,65,65,0,0,65,65,65,
-0,0,0,0,65,0,65,0,0,0,0,0,65,65,65,65,65,65,65,65,65,0,0,0,65,65,65,0,0,65,65,0,
-0,0,0,0,0,65,65,0,0,0,0,0,0,0,0,0,65,65,0,65,65,65,65,65,65,65,65,65,65,65,0,0,
-0,0,0,0,0,65,65,65,0,65,0,65,0,0,0,0,65,0,0,0,65,0,65,65,65,65,65,65,65,0,0,0,
-0,0,0,0,0,0,65,65,0,65,65,65,0,0,0,0,65,65,0,0,65,65,65,65,65,0,65,65,0,0,0,0,
-0,0,0,0,0,0,0,65,65,0,0,0,0,0,0,0,0,65,65,65,65,65,65,65,65,65,65,0,0,0,0,0,
-0,0,0,0,0,0,0,0,65,65,65,0,0,0,65,65,65,65,65,65,0,65,65,65,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,65,65,65,65,65,65,65,65,65,65,65,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,65,65,65,65,65,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,0,
+0,0,0,65,65,65,65,65,0,0,0,0,0,0,0,0,0,65,65,65,65,65,65,0,0,0,0,0,0,0,65,0,
+0,0,65,65,0,0,0,65,65,0,0,0,0,0,0,0,65,0,0,0,0,0,65,0,0,0,0,0,0,0,65,0,
+0,65,65,0,0,0,0,0,65,0,0,0,0,0,0,65,65,0,0,0,0,0,0,65,0,0,0,0,0,0,65,0,
+0,65,0,0,0,0,0,0,65,65,0,0,0,0,0,65,0,0,65,0,0,0,0,65,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,65,0,0,0,0,65,65,0,0,65,0,0,0,0,65,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,65,0,0,65,0,0,0,0,65,0,0,65,0,0,0,0,0,65,0,0,0,0,65,0,0,0,
+0,0,0,0,0,0,65,0,0,65,0,0,0,0,0,0,0,65,0,0,0,0,0,65,0,0,0,0,65,0,0,0,
+0,0,0,0,0,0,65,0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,0,65,0,0,0,0,65,0,0,0,
+0,0,0,0,0,0,65,65,0,0,0,0,0,0,0,65,65,0,0,0,0,0,0,65,0,0,0,0,65,0,0,0,
+65,0,0,0,0,0,0,65,65,0,0,0,0,0,65,65,0,0,0,0,65,0,0,65,0,0,0,0,65,0,0,0,
+0,65,0,0,0,0,0,0,65,65,0,0,65,65,65,0,0,0,0,65,65,0,0,65,0,0,0,0,65,0,0,0,
+0,65,65,0,0,0,0,0,0,65,65,65,65,0,0,0,0,0,65,65,0,0,0,65,0,0,0,0,65,0,0,0,
+0,0,65,65,0,0,0,0,0,0,0,0,0,0,0,0,0,65,65,0,0,0,0,65,0,0,0,65,65,0,0,0,
+0,0,0,65,65,0,0,0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,0,65,0,0,0,65,0,0,0,0,
+0,0,0,0,65,65,0,0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,0,65,0,0,0,65,0,0,0,0,
+0,0,0,0,0,65,65,0,0,0,0,0,0,0,0,0,0,65,65,0,0,0,0,0,0,0,65,65,0,0,0,0,
+0,0,0,0,0,0,65,65,0,0,0,0,0,0,0,0,0,0,65,65,0,0,0,0,0,65,65,0,0,0,0,0,
+0,0,0,0,0,0,0,0,65,0,0,0,0,0,0,0,0,0,0,65,65,65,65,65,65,65,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,65,65,0,0,0,0,0,0,0,0,0,0,0,65,65,0,0,0,0,0,0,65,0,
+0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,0,0,0,0,0,0,65,0,
+0,0,65,65,65,65,65,65,65,0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,0,0,0,0,0,0,65,0,
+0,0,0,0,0,0,0,0,65,65,65,65,65,65,0,0,0,0,0,65,0,0,0,0,0,0,0,0,0,0,65,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,0,0,0,0,0,0,65,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,65,0,0,0,0,65,65,65,65,65,65,65,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 </data>
  </layer>
  <objectgroup name="tiletype_object">
-  <object id="2614" gid="65" x="64" y="16" width="16" height="16">
+  <object id="2967" gid="65" x="400" y="32" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2615" gid="65" x="176" y="16" width="16" height="16">
+  <object id="2968" gid="65" x="416" y="32" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2616" gid="65" x="192" y="16" width="16" height="16">
+  <object id="2969" gid="65" x="432" y="32" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2617" gid="65" x="208" y="16" width="16" height="16">
+  <object id="2970" gid="65" x="448" y="32" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2618" gid="65" x="64" y="32" width="16" height="16">
+  <object id="2971" gid="65" x="464" y="32" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2619" gid="65" x="208" y="32" width="16" height="16">
+  <object id="2972" gid="65" x="480" y="32" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2620" gid="65" x="224" y="32" width="16" height="16">
+  <object id="2973" gid="65" x="480" y="48" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2621" gid="65" x="240" y="32" width="16" height="16">
+  <object id="2974" gid="65" x="480" y="64" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2622" gid="65" x="256" y="32" width="16" height="16">
+  <object id="2975" gid="65" x="480" y="80" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2623" gid="65" x="48" y="48" width="16" height="16">
+  <object id="2976" gid="65" x="48" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2624" gid="65" x="144" y="48" width="16" height="16">
+  <object id="2977" gid="65" x="64" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2625" gid="65" x="160" y="48" width="16" height="16">
+  <object id="2978" gid="65" x="80" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2626" gid="65" x="176" y="48" width="16" height="16">
+  <object id="2979" gid="65" x="96" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2627" gid="65" x="192" y="48" width="16" height="16">
+  <object id="2980" gid="65" x="112" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2628" gid="65" x="256" y="48" width="16" height="16">
+  <object id="2981" gid="65" x="272" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2629" gid="65" x="272" y="48" width="16" height="16">
+  <object id="2982" gid="65" x="288" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2630" gid="65" x="288" y="48" width="16" height="16">
+  <object id="2983" gid="65" x="304" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2631" gid="65" x="48" y="64" width="16" height="16">
+  <object id="2984" gid="65" x="320" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2632" gid="65" x="96" y="64" width="16" height="16">
+  <object id="2985" gid="65" x="336" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2633" gid="65" x="144" y="64" width="16" height="16">
+  <object id="2986" gid="65" x="352" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2634" gid="65" x="192" y="64" width="16" height="16">
+  <object id="2987" gid="65" x="480" y="96" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2635" gid="65" x="208" y="64" width="16" height="16">
+  <object id="2988" gid="65" x="32" y="112" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2636" gid="65" x="304" y="64" width="16" height="16">
+  <object id="2989" gid="65" x="48" y="112" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2637" gid="65" x="320" y="64" width="16" height="16">
+  <object id="2990" gid="65" x="112" y="112" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2638" gid="65" x="48" y="80" width="16" height="16">
+  <object id="2991" gid="65" x="128" y="112" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2639" gid="65" x="64" y="80" width="16" height="16">
+  <object id="2992" gid="65" x="256" y="112" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2640" gid="65" x="144" y="80" width="16" height="16">
+  <object id="2993" gid="65" x="352" y="112" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2641" gid="65" x="160" y="80" width="16" height="16">
+  <object id="2994" gid="65" x="480" y="112" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2642" gid="65" x="176" y="80" width="16" height="16">
+  <object id="2995" gid="65" x="16" y="128" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2643" gid="65" x="192" y="80" width="16" height="16">
+  <object id="2996" gid="65" x="32" y="128" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2644" gid="65" x="208" y="80" width="16" height="16">
+  <object id="2997" gid="65" x="128" y="128" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2645" gid="65" x="336" y="80" width="16" height="16">
+  <object id="2998" gid="65" x="240" y="128" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2646" gid="65" x="352" y="80" width="16" height="16">
+  <object id="2999" gid="65" x="256" y="128" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2647" gid="65" x="368" y="80" width="16" height="16">
+  <object id="3000" gid="65" x="368" y="128" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2648" gid="65" x="48" y="96" width="16" height="16">
+  <object id="3001" gid="65" x="480" y="128" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2649" gid="65" x="192" y="96" width="16" height="16">
+  <object id="3002" gid="65" x="16" y="144" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2650" gid="65" x="208" y="96" width="16" height="16">
+  <object id="3003" gid="65" x="128" y="144" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2651" gid="65" x="224" y="96" width="16" height="16">
+  <object id="3004" gid="65" x="144" y="144" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2652" gid="65" x="256" y="96" width="16" height="16">
+  <object id="3005" gid="65" x="240" y="144" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2653" gid="65" x="272" y="96" width="16" height="16">
+  <object id="3006" gid="65" x="288" y="144" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2654" gid="65" x="288" y="96" width="16" height="16">
+  <object id="3007" gid="65" x="368" y="144" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2655" gid="65" x="304" y="96" width="16" height="16">
+  <object id="3008" gid="65" x="144" y="160" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2656" gid="65" x="320" y="96" width="16" height="16">
+  <object id="3009" gid="65" x="224" y="160" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2657" gid="65" x="336" y="96" width="16" height="16">
+  <object id="3010" gid="65" x="240" y="160" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2658" gid="65" x="368" y="96" width="16" height="16">
+  <object id="3011" gid="65" x="288" y="160" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2659" gid="65" x="384" y="96" width="16" height="16">
+  <object id="3012" gid="65" x="368" y="160" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2660" gid="65" x="48" y="112" width="16" height="16">
+  <object id="3013" gid="65" x="96" y="176" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2661" gid="65" x="192" y="112" width="16" height="16">
+  <object id="3014" gid="65" x="144" y="176" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2662" gid="65" x="208" y="112" width="16" height="16">
+  <object id="3015" gid="65" x="224" y="176" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2663" gid="65" x="224" y="112" width="16" height="16">
+  <object id="3016" gid="65" x="272" y="176" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2664" gid="65" x="240" y="112" width="16" height="16">
+  <object id="3017" gid="65" x="368" y="176" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2665" gid="65" x="336" y="112" width="16" height="16">
+  <object id="3018" gid="65" x="448" y="176" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2666" gid="65" x="352" y="112" width="16" height="16">
+  <object id="3019" gid="65" x="96" y="192" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2667" gid="65" x="400" y="112" width="16" height="16">
+  <object id="3020" gid="65" x="144" y="192" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2668" gid="65" x="416" y="112" width="16" height="16">
+  <object id="3021" gid="65" x="272" y="192" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2669" gid="65" x="32" y="128" width="16" height="16">
+  <object id="3022" gid="65" x="368" y="192" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2670" gid="65" x="48" y="128" width="16" height="16">
+  <object id="3023" gid="65" x="448" y="192" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2671" gid="65" x="272" y="128" width="16" height="16">
+  <object id="3024" gid="65" x="96" y="208" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2672" gid="65" x="368" y="128" width="16" height="16">
+  <object id="3025" gid="65" x="272" y="208" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2673" gid="65" x="416" y="128" width="16" height="16">
+  <object id="3026" gid="65" x="368" y="208" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2674" gid="65" x="432" y="128" width="16" height="16">
+  <object id="3027" gid="65" x="448" y="208" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2675" gid="65" x="16" y="144" width="16" height="16">
+  <object id="3028" gid="65" x="96" y="224" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2676" gid="65" x="48" y="144" width="16" height="16">
+  <object id="3029" gid="65" x="112" y="224" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2677" gid="65" x="192" y="144" width="16" height="16">
+  <object id="3030" gid="65" x="240" y="224" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2678" gid="65" x="208" y="144" width="16" height="16">
+  <object id="3031" gid="65" x="256" y="224" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2679" gid="65" x="224" y="144" width="16" height="16">
+  <object id="3032" gid="65" x="368" y="224" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2680" gid="65" x="288" y="144" width="16" height="16">
+  <object id="3033" gid="65" x="448" y="224" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2681" gid="65" x="368" y="144" width="16" height="16">
+  <object id="3034" gid="65" x="0" y="240" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2682" gid="65" x="384" y="144" width="16" height="16">
+  <object id="3035" gid="65" x="112" y="240" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2683" gid="65" x="432" y="144" width="16" height="16">
+  <object id="3036" gid="65" x="128" y="240" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2684" gid="65" x="448" y="144" width="16" height="16">
+  <object id="3037" gid="65" x="224" y="240" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2685" gid="65" x="16" y="160" width="16" height="16">
+  <object id="3038" gid="65" x="240" y="240" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2686" gid="65" x="32" y="160" width="16" height="16">
+  <object id="3039" gid="65" x="320" y="240" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2687" gid="65" x="64" y="160" width="16" height="16">
+  <object id="3040" gid="65" x="368" y="240" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2688" gid="65" x="176" y="160" width="16" height="16">
+  <object id="3041" gid="65" x="448" y="240" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2689" gid="65" x="192" y="160" width="16" height="16">
+  <object id="3042" gid="65" x="16" y="256" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2690" gid="65" x="208" y="160" width="16" height="16">
+  <object id="3043" gid="65" x="128" y="256" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2691" gid="65" x="224" y="160" width="16" height="16">
+  <object id="3044" gid="65" x="144" y="256" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2692" gid="65" x="240" y="160" width="16" height="16">
+  <object id="3045" gid="65" x="192" y="256" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2693" gid="65" x="256" y="160" width="16" height="16">
+  <object id="3046" gid="65" x="208" y="256" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2694" gid="65" x="272" y="160" width="16" height="16">
+  <object id="3047" gid="65" x="224" y="256" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2695" gid="65" x="288" y="160" width="16" height="16">
+  <object id="3048" gid="65" x="304" y="256" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2696" gid="65" x="304" y="160" width="16" height="16">
+  <object id="3049" gid="65" x="320" y="256" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2697" gid="65" x="384" y="160" width="16" height="16">
+  <object id="3050" gid="65" x="368" y="256" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2698" gid="65" x="464" y="160" width="16" height="16">
+  <object id="3051" gid="65" x="448" y="256" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2699" gid="65" x="16" y="176" width="16" height="16">
+  <object id="3052" gid="65" x="16" y="272" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2700" gid="65" x="64" y="176" width="16" height="16">
+  <object id="3053" gid="65" x="32" y="272" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2701" gid="65" x="128" y="176" width="16" height="16">
+  <object id="3054" gid="65" x="144" y="272" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2702" gid="65" x="144" y="176" width="16" height="16">
+  <object id="3055" gid="65" x="160" y="272" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2703" gid="65" x="160" y="176" width="16" height="16">
+  <object id="3056" gid="65" x="176" y="272" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2704" gid="65" x="304" y="176" width="16" height="16">
+  <object id="3057" gid="65" x="192" y="272" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2705" gid="65" x="320" y="176" width="16" height="16">
+  <object id="3058" gid="65" x="288" y="272" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2706" gid="65" x="336" y="176" width="16" height="16">
+  <object id="3059" gid="65" x="304" y="272" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2707" gid="65" x="352" y="176" width="16" height="16">
+  <object id="3060" gid="65" x="368" y="272" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2708" gid="65" x="368" y="176" width="16" height="16">
+  <object id="3061" gid="65" x="448" y="272" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2709" gid="65" x="384" y="176" width="16" height="16">
+  <object id="3062" gid="65" x="32" y="288" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2710" gid="65" x="464" y="176" width="16" height="16">
+  <object id="3063" gid="65" x="48" y="288" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2711" gid="65" x="480" y="176" width="16" height="16">
+  <object id="3064" gid="65" x="272" y="288" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2712" gid="65" x="48" y="192" width="16" height="16">
+  <object id="3065" gid="65" x="288" y="288" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2713" gid="65" x="64" y="192" width="16" height="16">
+  <object id="3066" gid="65" x="368" y="288" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2714" gid="65" x="112" y="192" width="16" height="16">
+  <object id="3067" gid="65" x="432" y="288" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2715" gid="65" x="128" y="192" width="16" height="16">
+  <object id="3068" gid="65" x="448" y="288" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2716" gid="65" x="192" y="192" width="16" height="16">
+  <object id="3069" gid="65" x="48" y="304" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2717" gid="65" x="208" y="192" width="16" height="16">
+  <object id="3070" gid="65" x="64" y="304" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2718" gid="65" x="224" y="192" width="16" height="16">
+  <object id="3071" gid="65" x="272" y="304" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2719" gid="65" x="240" y="192" width="16" height="16">
+  <object id="3072" gid="65" x="368" y="304" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2720" gid="65" x="256" y="192" width="16" height="16">
+  <object id="3073" gid="65" x="432" y="304" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2721" gid="65" x="272" y="192" width="16" height="16">
+  <object id="3074" gid="65" x="64" y="320" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2722" gid="65" x="368" y="192" width="16" height="16">
+  <object id="3075" gid="65" x="80" y="320" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2723" gid="65" x="384" y="192" width="16" height="16">
+  <object id="3076" gid="65" x="272" y="320" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2724" gid="65" x="400" y="192" width="16" height="16">
+  <object id="3077" gid="65" x="368" y="320" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2725" gid="65" x="480" y="192" width="16" height="16">
+  <object id="3078" gid="65" x="432" y="320" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2726" gid="65" x="64" y="208" width="16" height="16">
+  <object id="3079" gid="65" x="80" y="336" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2727" gid="65" x="96" y="208" width="16" height="16">
+  <object id="3080" gid="65" x="96" y="336" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2728" gid="65" x="176" y="208" width="16" height="16">
+  <object id="3081" gid="65" x="272" y="336" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2729" gid="65" x="192" y="208" width="16" height="16">
+  <object id="3082" gid="65" x="288" y="336" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2730" gid="65" x="288" y="208" width="16" height="16">
+  <object id="3083" gid="65" x="416" y="336" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2731" gid="65" x="304" y="208" width="16" height="16">
+  <object id="3084" gid="65" x="432" y="336" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2732" gid="65" x="352" y="208" width="16" height="16">
+  <object id="3085" gid="65" x="96" y="352" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2733" gid="65" x="368" y="208" width="16" height="16">
+  <object id="3086" gid="65" x="112" y="352" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2734" gid="65" x="384" y="208" width="16" height="16">
+  <object id="3087" gid="65" x="288" y="352" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2735" gid="65" x="400" y="208" width="16" height="16">
+  <object id="3088" gid="65" x="304" y="352" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2736" gid="65" x="416" y="208" width="16" height="16">
+  <object id="3089" gid="65" x="400" y="352" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2737" gid="65" x="432" y="208" width="16" height="16">
+  <object id="3090" gid="65" x="416" y="352" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2738" gid="65" x="496" y="208" width="16" height="16">
+  <object id="3091" gid="65" x="128" y="368" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2739" gid="65" x="64" y="224" width="16" height="16">
+  <object id="3092" gid="65" x="304" y="368" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2740" gid="65" x="80" y="224" width="16" height="16">
+  <object id="3093" gid="65" x="320" y="368" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2741" gid="65" x="96" y="224" width="16" height="16">
+  <object id="3094" gid="65" x="336" y="368" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2742" gid="65" x="160" y="224" width="16" height="16">
+  <object id="3095" gid="65" x="352" y="368" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2743" gid="65" x="304" y="224" width="16" height="16">
+  <object id="3096" gid="65" x="368" y="368" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2744" gid="65" x="320" y="224" width="16" height="16">
+  <object id="3097" gid="65" x="384" y="368" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2745" gid="65" x="352" y="224" width="16" height="16">
+  <object id="3098" gid="65" x="400" y="368" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2746" gid="65" x="400" y="224" width="16" height="16">
+  <object id="3099" gid="65" x="144" y="384" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2747" gid="65" x="448" y="224" width="16" height="16">
+  <object id="3100" gid="65" x="160" y="384" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2748" gid="65" x="496" y="224" width="16" height="16">
+  <object id="3101" gid="65" x="352" y="384" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2749" gid="65" x="64" y="240" width="16" height="16">
+  <object id="3102" gid="65" x="368" y="384" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2750" gid="65" x="80" y="240" width="16" height="16">
+  <object id="3103" gid="65" x="480" y="384" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2751" gid="65" x="96" y="240" width="16" height="16">
+  <object id="3104" gid="65" x="160" y="400" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2752" gid="65" x="144" y="240" width="16" height="16">
+  <object id="3105" gid="65" x="480" y="400" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2753" gid="65" x="320" y="240" width="16" height="16">
+  <object id="3106" gid="65" x="480" y="416" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2754" gid="65" x="336" y="240" width="16" height="16">
+  <object id="3107" gid="65" x="304" y="432" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2755" gid="65" x="352" y="240" width="16" height="16">
+  <object id="3108" gid="65" x="480" y="432" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2756" gid="65" x="400" y="240" width="16" height="16">
+  <object id="3109" gid="65" x="32" y="448" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2757" gid="65" x="416" y="240" width="16" height="16">
+  <object id="3110" gid="65" x="48" y="448" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2758" gid="65" x="464" y="240" width="16" height="16">
+  <object id="3111" gid="65" x="64" y="448" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2759" gid="65" x="480" y="240" width="16" height="16">
+  <object id="3112" gid="65" x="80" y="448" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2760" gid="65" x="64" y="256" width="16" height="16">
+  <object id="3113" gid="65" x="96" y="448" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2761" gid="65" x="80" y="256" width="16" height="16">
+  <object id="3114" gid="65" x="112" y="448" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2762" gid="65" x="112" y="256" width="16" height="16">
+  <object id="3115" gid="65" x="128" y="448" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2763" gid="65" x="128" y="256" width="16" height="16">
+  <object id="3116" gid="65" x="304" y="448" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2764" gid="65" x="144" y="256" width="16" height="16">
+  <object id="3117" gid="65" x="480" y="448" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2765" gid="65" x="320" y="256" width="16" height="16">
+  <object id="3118" gid="65" x="128" y="464" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2766" gid="65" x="416" y="256" width="16" height="16">
+  <object id="3119" gid="65" x="144" y="464" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2767" gid="65" x="480" y="256" width="16" height="16">
+  <object id="3120" gid="65" x="160" y="464" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2768" gid="65" x="496" y="256" width="16" height="16">
+  <object id="3121" gid="65" x="176" y="464" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2769" gid="65" x="64" y="272" width="16" height="16">
+  <object id="3122" gid="65" x="192" y="464" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2770" gid="65" x="80" y="272" width="16" height="16">
+  <object id="3123" gid="65" x="208" y="464" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2771" gid="65" x="96" y="272" width="16" height="16">
+  <object id="3124" gid="65" x="304" y="464" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2772" gid="65" x="112" y="272" width="16" height="16">
+  <object id="3125" gid="65" x="480" y="464" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2773" gid="65" x="128" y="272" width="16" height="16">
+  <object id="3126" gid="65" x="304" y="480" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2774" gid="65" x="144" y="272" width="16" height="16">
+  <object id="3127" gid="65" x="480" y="480" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2775" gid="65" x="320" y="272" width="16" height="16">
+  <object id="3128" gid="65" x="304" y="496" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2776" gid="65" x="416" y="272" width="16" height="16">
+  <object id="3129" gid="65" x="384" y="496" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2777" gid="65" x="496" y="272" width="16" height="16">
+  <object id="3130" gid="65" x="400" y="496" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2778" gid="65" x="64" y="288" width="16" height="16">
+  <object id="3131" gid="65" x="416" y="496" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2779" gid="65" x="96" y="288" width="16" height="16">
+  <object id="3132" gid="65" x="432" y="496" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2780" gid="65" x="112" y="288" width="16" height="16">
+  <object id="3133" gid="65" x="448" y="496" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2781" gid="65" x="160" y="288" width="16" height="16">
+  <object id="3134" gid="65" x="464" y="496" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
   </object>
-  <object id="2782" gid="65" x="176" y="288" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2783" gid="65" x="320" y="288" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2784" gid="65" x="432" y="288" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2785" gid="65" x="64" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2786" gid="65" x="96" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2787" gid="65" x="112" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2788" gid="65" x="192" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2789" gid="65" x="208" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2790" gid="65" x="224" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2791" gid="65" x="304" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2792" gid="65" x="320" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2793" gid="65" x="336" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2794" gid="65" x="352" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2795" gid="65" x="384" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2796" gid="65" x="400" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2797" gid="65" x="416" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2798" gid="65" x="432" y="304" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2799" gid="65" x="64" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2800" gid="65" x="96" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2801" gid="65" x="112" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2802" gid="65" x="128" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2803" gid="65" x="224" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2804" gid="65" x="240" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2805" gid="65" x="256" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2806" gid="65" x="272" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2807" gid="65" x="288" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2808" gid="65" x="304" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2809" gid="65" x="320" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2810" gid="65" x="336" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2811" gid="65" x="352" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2812" gid="65" x="384" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2813" gid="65" x="400" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2814" gid="65" x="432" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2815" gid="65" x="448" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2816" gid="65" x="464" y="320" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2817" gid="65" x="64" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2818" gid="65" x="96" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2819" gid="65" x="128" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2820" gid="65" x="144" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2821" gid="65" x="304" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2822" gid="65" x="320" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2823" gid="65" x="336" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2824" gid="65" x="384" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2825" gid="65" x="400" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2826" gid="65" x="416" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2827" gid="65" x="432" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2828" gid="65" x="464" y="336" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2829" gid="65" x="64" y="352" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2830" gid="65" x="96" y="352" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2831" gid="65" x="144" y="352" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2832" gid="65" x="160" y="352" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2833" gid="65" x="272" y="352" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2834" gid="65" x="288" y="352" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2835" gid="65" x="368" y="352" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2836" gid="65" x="400" y="352" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2837" gid="65" x="416" y="352" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2838" gid="65" x="432" y="352" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2839" gid="65" x="464" y="352" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2840" gid="65" x="64" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2841" gid="65" x="96" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2842" gid="65" x="160" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2843" gid="65" x="176" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2844" gid="65" x="240" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2845" gid="65" x="256" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2846" gid="65" x="272" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2847" gid="65" x="288" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2848" gid="65" x="368" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2849" gid="65" x="384" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2850" gid="65" x="400" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2851" gid="65" x="416" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2852" gid="65" x="432" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2853" gid="65" x="464" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2854" gid="65" x="496" y="368" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2855" gid="65" x="64" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2856" gid="65" x="96" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2857" gid="65" x="176" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2858" gid="65" x="192" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2859" gid="65" x="208" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2860" gid="65" x="224" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2861" gid="65" x="240" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2862" gid="65" x="272" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2863" gid="65" x="336" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2864" gid="65" x="352" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2865" gid="65" x="368" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2866" gid="65" x="384" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2867" gid="65" x="400" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2868" gid="65" x="416" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2869" gid="65" x="464" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2870" gid="65" x="480" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2871" gid="65" x="496" y="384" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2872" gid="65" x="64" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2873" gid="65" x="96" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2874" gid="65" x="192" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2875" gid="65" x="208" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2876" gid="65" x="224" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2877" gid="65" x="240" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2878" gid="65" x="256" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2879" gid="65" x="272" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2880" gid="65" x="288" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2881" gid="65" x="304" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2882" gid="65" x="320" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2883" gid="65" x="384" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2884" gid="65" x="400" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2885" gid="65" x="416" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2886" gid="65" x="464" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2887" gid="65" x="480" y="400" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2888" gid="65" x="80" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2889" gid="65" x="96" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2890" gid="65" x="256" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2891" gid="65" x="272" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2892" gid="65" x="304" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2893" gid="65" x="320" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2894" gid="65" x="336" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2895" gid="65" x="352" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2896" gid="65" x="368" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2897" gid="65" x="384" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2898" gid="65" x="400" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2899" gid="65" x="416" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2900" gid="65" x="432" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2901" gid="65" x="448" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2902" gid="65" x="464" y="416" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2903" gid="65" x="80" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2904" gid="65" x="96" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2905" gid="65" x="112" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2906" gid="65" x="144" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2907" gid="65" x="176" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2908" gid="65" x="256" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2909" gid="65" x="320" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2910" gid="65" x="352" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2911" gid="65" x="368" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2912" gid="65" x="384" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2913" gid="65" x="400" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2914" gid="65" x="416" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2915" gid="65" x="432" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2916" gid="65" x="448" y="432" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2917" gid="65" x="96" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2918" gid="65" x="112" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2919" gid="65" x="144" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2920" gid="65" x="160" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2921" gid="65" x="176" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2922" gid="65" x="256" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2923" gid="65" x="272" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2924" gid="65" x="320" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2925" gid="65" x="336" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2926" gid="65" x="352" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2927" gid="65" x="368" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2928" gid="65" x="384" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2929" gid="65" x="416" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2930" gid="65" x="432" y="448" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2931" gid="65" x="112" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2932" gid="65" x="128" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2933" gid="65" x="272" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2934" gid="65" x="288" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2935" gid="65" x="304" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2936" gid="65" x="320" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2937" gid="65" x="336" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2938" gid="65" x="352" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2939" gid="65" x="368" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2940" gid="65" x="384" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2941" gid="65" x="400" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2942" gid="65" x="416" y="464" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2943" gid="65" x="128" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2944" gid="65" x="144" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2945" gid="65" x="160" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2946" gid="65" x="224" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2947" gid="65" x="240" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2948" gid="65" x="256" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2949" gid="65" x="272" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2950" gid="65" x="288" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2951" gid="65" x="304" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2952" gid="65" x="336" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2953" gid="65" x="352" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2954" gid="65" x="368" y="480" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2955" gid="65" x="160" y="496" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2956" gid="65" x="176" y="496" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2957" gid="65" x="192" y="496" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2958" gid="65" x="208" y="496" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2959" gid="65" x="224" y="496" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2960" gid="65" x="240" y="496" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2961" gid="65" x="256" y="496" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2962" gid="65" x="272" y="496" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2963" gid="65" x="288" y="496" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2964" gid="65" x="304" y="496" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2965" gid="65" x="320" y="496" width="16" height="16">
-   <properties>
-    <property name="tile_type" value="solid"/>
-   </properties>
-  </object>
-  <object id="2966" gid="65" x="256" y="512" width="16" height="16">
+  <object id="3135" gid="65" x="480" y="496" width="16" height="16">
    <properties>
     <property name="tile_type" value="solid"/>
    </properties>
