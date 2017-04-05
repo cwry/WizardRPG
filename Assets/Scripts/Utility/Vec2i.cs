@@ -1,7 +1,7 @@
-﻿#pragma warning disable 0660, 0661
-using System;
+﻿using System;
 using UnityEngine;
 
+[Serializable]
 public struct Vec2i{
 
     public Vec2i(int x, int y){
@@ -37,4 +37,3 @@ public struct Vec2i{
         }
     }
 }
-#pragma warning restore 0660, 0661

@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 using Eppy;
 
-public static partial class InspectorDrawHelpers{
+public static partial class InspectorDrawUtil{
 
     public static Flattened2DArray<T> DrawEnumGrid<T>(Flattened2DArray<T> enums, Func<T, int, int, Color> mapColor){
         var result = new Flattened2DArray<T>(enums.Width, enums.Height);

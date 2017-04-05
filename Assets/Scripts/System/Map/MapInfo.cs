@@ -76,6 +76,8 @@ public class MapInfo : MonoBehaviour {
         }
     }
 
+    public Vec2i? PlayerTargetPosition = null;
+
     [SerializeField]
     int _width;
     public int Width {

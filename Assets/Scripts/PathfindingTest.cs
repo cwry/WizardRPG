@@ -11,11 +11,10 @@ public class PathfindingTest : MonoBehaviour {
     void DoStuff() {
         var actor = GetComponent<Actor>();
         var tilePosition = GetComponent<TilePosition>();
-        var goal = new Vec2i(0, 31);
+        var goal = new Vec2i(Random.Range(0, 32), Random.Range(0, 32));
 
-
-        if (tilePosition.Position == new Vec2i(0, 31)) {
-            goal = new Vec2i(31, 31);
+        while(MapInfo.Current.TileTypes[goal.x, goal.y] == TileType.SOLID) {
+            goal = new Vec2i(Random.Range(0, 32), Random.Range(0, 32));
         }
 
         actor.FindAndMoveOnPath(goal, 2f)

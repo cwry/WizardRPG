@@ -73,6 +73,17 @@ public class TilePosition : MonoBehaviour {
         }
     }
 
+    Vector2? _lastWorldPosition = null;
+    public Vector2 LastWorldPosition {
+        get {
+            if (_lastPosition == null) _lastWorldPosition = WorldPosition;
+            return (Vector2)_lastWorldPosition;
+        }
+        private set {
+            _lastWorldPosition = value;
+        }
+    }
+
     public Vec2i Position {
         get { return new Vec2i(Mathf.RoundToInt(transform.position.x - Offset.x), Mathf.RoundToInt(transform.position.y - Offset.y)); }
         set { WorldPosition = new Vector2(value.x, value.y); }
@@ -81,7 +92,12 @@ public class TilePosition : MonoBehaviour {
     public Vector2 WorldPosition {
         get { return new Vector2(transform.position.x - Offset.x, transform.position.y - Offset.y); }
         set {
-            transform.position = new Vector3(value.x + Offset.x, value.y + Offset.y);
+            var newPosition = new Vector3(value.x + Offset.x, value.y + Offset.y);
+            transform.position = newPosition;
+            if (WorldPosition != LastWorldPosition) {
+                FireWorldPositionChanged();
+                LastWorldPosition = newPosition;
+            }
             if (Position != LastPosition) {
                 FirePositionChanged();
                 LastPosition = Position;
@@ -91,9 +107,14 @@ public class TilePosition : MonoBehaviour {
 
     public Vector2 Offset { get; set; }
 
+    public event Action WorldPositionChanged;
     public event Action PositionChanged;
     public event Action OrderChanged;
     public event Action Changed;
+
+    void Awake() {
+        UpdateSpriteRendererOrder();
+    }
 
     void OnEnable() {
         transform.hideFlags = HideFlags.HideInInspector;
@@ -115,7 +136,7 @@ public class TilePosition : MonoBehaviour {
         return false;
     }
 
-    void Update() {
+    void LateUpdate() {
 #if UNITY_EDITOR
         while (UnityEditorInternal.ComponentUtility.MoveComponentUp(this)) { }
         if (!EditorApplication.isPlayingOrWillChangePlaymode) {
@@ -138,6 +159,10 @@ public class TilePosition : MonoBehaviour {
 
         if (transform.hasChanged) {
             transform.hasChanged = false;
+            if(WorldPosition != LastWorldPosition) {
+                FireWorldPositionChanged();
+                LastWorldPosition = LastWorldPosition;
+            }
             if(Position != LastPosition) {
                 FirePositionChanged();
                 LastPosition = Position;
@@ -151,7 +176,7 @@ public class TilePosition : MonoBehaviour {
         if(spriteRenderer != null) {
             spriteRenderer.sortingLayerName = DrawLayerToSortingLayerName(Layer);
             if(Layer == DrawLayer.DEFAULT) {
-                spriteRenderer.sortingOrder = int.MaxValue - Position.y * 100 + FightDrawPriority;
+                spriteRenderer.sortingOrder = (int.MaxValue / 2) - ((int)((WorldPosition.y + 1) * 10)) * 100 + FightDrawPriority;
             }else {
                 spriteRenderer.sortingOrder = FightDrawPriority;
             }
@@ -169,7 +194,6 @@ public class TilePosition : MonoBehaviour {
     }
 
     void FirePositionChanged() {
-        UpdateSpriteRendererOrder();
         if (PositionChanged != null) PositionChanged();
         if (Changed != null) Changed();
     }
@@ -177,6 +201,12 @@ public class TilePosition : MonoBehaviour {
     void FireOrderChanged() {
         UpdateSpriteRendererOrder();
         if (OrderChanged != null) OrderChanged();
+        if (Changed != null) Changed();
+    }
+
+    void FireWorldPositionChanged() {
+        UpdateSpriteRendererOrder();
+        if (WorldPositionChanged != null) WorldPositionChanged();
         if (Changed != null) Changed();
     }
 }
